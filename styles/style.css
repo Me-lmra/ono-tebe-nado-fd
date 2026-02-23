@@ -20,7 +20,7 @@
     font-weight: 400;
 }
 
-.header__links-list-item_no-bullet{
+.header__links-list-item_no-bullet {
     list-style-type: none;
 }
 
@@ -267,7 +267,7 @@
     justify-self: start;
 }
 
-.header__address {
+.footer__address {
     list-style: none;
 }
 
