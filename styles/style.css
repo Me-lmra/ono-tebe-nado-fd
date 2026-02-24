@@ -1,14 +1,13 @@
+.cover, .lot-list {
+    background-color: #8B8787;
+}
+
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     padding: 93px 50px 95px 50px;
-}
-
-.header__logo {
-    display: block;
-    width: 148px;
-    height: 105px;
 }
 
 .header__links-list {
@@ -24,21 +23,34 @@
     list-style-type: none;
 }
 
-.address {
-    max-width: 240px;
-    justify-self: end;
+.header__link_active {
+    text-decoration: none;
 }
 
-.header__address {
+.header__logo {
+    display: block;
+}
+
+.header__logo img {
+    width: 130px;
+    height: 105px;
+}
+
+.address {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     font-style: normal;
+    max-width: 240px;
+    justify-self: end;
+    line-height: 1.35;
 }
 
 
 .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: rgb(0 0 0 /0.6);
     width: 100%;
     height: 100%;
@@ -47,7 +59,7 @@
 
 .cover {
     position: relative;
-    background: url("../images/cover.jpg") center/cover;
+    background: url("../images/cover.jpg") no-repeat center/cover;
     width: 100%;
     min-height: 757px;
     margin-bottom: 180px;
@@ -149,9 +161,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 596px;
+    min-height: 596px;
     background-size: cover;
     background-position: center;
+    padding: 48px 40px;
 }
 
 .card_type_film {
@@ -177,7 +190,6 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 120%;
-    padding: 48px 40px;
     z-index: 2;
 }
 
@@ -187,12 +199,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 120%;
-    padding: 48px 40px;
     z-index: 2;
-}
-
-.card__centered {
-    padding: 0 40px 48px;
 }
 
 .lots__look-more-link {
@@ -205,15 +212,10 @@
 
 
 .about {
-    height: 595px;
-    margin: 0 24px 180px;
-}
-
-.about__column {
     display: grid;
     grid-template-columns: 334px 1fr;
-    row-gap: 35px;
     padding-top: 35px;
+    margin: 0 24px 180px;
 }
 
 .about__logo {
@@ -257,17 +259,13 @@
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 180px;
     width: 100%;
     position: relative;
-    padding: 0 50px 0;
+    padding: 0 50px 82px;
 }
 
 .address__footer {
     justify-self: start;
-}
-
-.footer__address {
     list-style: none;
 }
 
